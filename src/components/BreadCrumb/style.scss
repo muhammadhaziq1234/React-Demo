@@ -1,0 +1,41 @@
+.breadcrumb {
+ margin-top: 30px;
+  .breadcrumb-item {
+    position: relative;
+    padding-right: 18px;
+    margin-bottom: 3px;
+    text-decoration: none;
+  
+    &::before {
+      content: "" !important;
+      background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='6.697' height='11.324' viewBox='0 0 6.697 11.324'%3E%3Cpath id='Path_1073' data-name='Path 1073' d='M18203.932,34.111l-.5-.5-5.123-5.208,1-.982,4.627,4.7,4.705-4.709.992.99Z' transform='translate(-27.414 18209.637) rotate(-90)' fill='%23545454'/%3E%3C/svg%3E%0A");
+      height: 11px;
+      width: 7px;
+      background-repeat: no-repeat;
+      top: 50%;
+      position: absolute;
+      right: 0px;
+      transform: translateY(-50%);
+    }
+  
+    &:last-child {
+      &:before {
+        display: none;
+      }
+    }
+    &.disabled > a {
+      color: grey;
+      text-decoration: none;
+    }
+    &.active > a {
+      color: #003566 !important;
+      pointer-events: none;
+      text-decoration: none;
+
+  
+      &:hover {
+        text-decoration: underline !important;
+      }
+    }
+  }
+}
