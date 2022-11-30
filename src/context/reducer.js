@@ -50,7 +50,7 @@ function appReducer(state, action) {
                     if (filter === 'toDate') {
                         return new Date(action.filterObject[filter]).getTime() > new Date(person.creationTimestamp).getTime()
                     }
-                    return action.filterObject[filter] === person[filter]
+                    return action.filterObject[filter]?.toString() === person[filter]?.toString()
                 });
             })
 
