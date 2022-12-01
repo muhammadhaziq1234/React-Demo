@@ -3,7 +3,7 @@ import React from 'react'
 function TableRow({ items }) {
     return (
         items?.map((item, key) => (
-            <tr key={key || item.logId} className="text-left">
+            <tr key={key || item.logId} className="text-left" data-testid='row-userTest'>
                 <td>{item?.logId || ""}</td>
                 <td>{item?.applicationType || ""}</td>
                 <td>{item?.applicationId || ""}</td>

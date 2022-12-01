@@ -4,7 +4,7 @@ function CustomInput({ placeHolder, onChange, value, className, type = "text", i
     if (type === "select") {
         return (
             <>
-                <div className={className} style={{ width: "20%" }} >
+                <div className={`form-group ${className}`} style={{ width: "20%" }} >
                     <label htmlFor="select-input" className="form-label">{label}</label>
                     <select className="form-select" aria-label="Default select example" id="select-input" name={name} onChange={onChange} value={value}>
                         <option defaultValue={""}></option>
@@ -20,9 +20,9 @@ function CustomInput({ placeHolder, onChange, value, className, type = "text", i
 
     return (
         <>
-            <div className={className}>
-                <label htmlFor="simple-imput" className="form-label">{label}</label>
-                <input id="simple-imput" className={`form-control`} type={type} placeholder={placeHolder} onChange={onChange} value={value} name={name} />
+            <div className={`form-group ${className}`}>
+                <label htmlFor={name} className="form-label">{label}</label>
+                <input id={name} className={`form-control`} type={type} placeholder={placeHolder} onChange={onChange} value={value} name={name} />
             </div>
         </>
     )

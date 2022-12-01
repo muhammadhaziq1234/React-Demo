@@ -1,7 +1,7 @@
 import React from 'react';
 import { usePagination, DOTS } from '../../../hooks/usePagination';
 import { useAppState, useAppDispatch } from '../../../context';
-import './pagination.scss';
+// import './pagination.scss';
 const Pagination = props => {
     const {
         recordsFiltered,

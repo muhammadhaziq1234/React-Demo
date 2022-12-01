@@ -27,5 +27,7 @@ export const usePromise = (fn, defaultValue) => {
     ranFn();
   }, [ranFn]);
 
+  /** Return data error refech function and loading state */
+
   return { data: value, error, loading, refetch };
 };

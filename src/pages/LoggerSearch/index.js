@@ -39,7 +39,7 @@ function LoggerSearch() {
                 <div className='d-flex'>
                     <FilterForm />
                 </div>
-                <div className='mt-2'>
+                <div className='mt-2' data-testid='userTest'>
                     <table className="table table-bordered table-responsives">
                         <thead>
                             <tr>

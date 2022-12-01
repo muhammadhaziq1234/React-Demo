@@ -13,7 +13,6 @@ function FilterForm() {
         toDate,
         applicationId, applicationTypes, actionTypes } = useAppState();
     let [searchParams, setSearchParams] = useSearchParams();
-
     useLayoutEffect(() => {
         let filterObject = {}
         searchParams.forEach((key, value) => {
@@ -39,7 +38,6 @@ function FilterForm() {
             ...(applicationId && { applicationId: applicationId }),
         })
     }
-
     return (
         <form className='d-inline-flex gap-2' onSubmit={handleOnSubmit}>
             <CustomInput placeHolder="e.g Admin User" onChange={(e) => { dispatch({ type: "INPUT_CHANGE", e: e }) }} value={employername} className="" type="text" label="Employee Name" name="employername" />
@@ -48,7 +46,7 @@ function FilterForm() {
             <CustomInput placeHolder="Select Date" onChange={(e) => { dispatch({ type: "INPUT_CHANGE", e: e }) }} value={fromDate} className="" type="date" label="From Date" name="fromDate" />
             <CustomInput placeHolder="Select Date" onChange={(e) => { dispatch({ type: "INPUT_CHANGE", e: e }) }} value={toDate} className="" type="date" label="To Date" name="toDate" />
             <CustomInput placeHolder="e.g 219841/2021" onChange={(e) => { dispatch({ type: "INPUT_CHANGE", e: e }) }} value={applicationId} className="" type="text" label="Application Id" name="applicationId" />
-            <button type="submit" className="btn btn-primary btn btn-sm">Select Logger</button>
+            <button type="submit" aria-label="Search Logger" className="btn btn-primary btn btn-sm">Search Logger</button>
         </form>
     )
 }
