@@ -41,4 +41,4 @@ Test the app live on this url https://6389e919e8cbec0008c74b84--gilded-caramel-2
 4-User can filter logs by using filtering options provided.\
 5-User can see sorted results for each columns.\
 6-Test Case Implement On Input Components.\
-7-Test Case Implement On Logger Search Screen Table Records.\
+7-Test Case Implement On Logger Search Screen Table Records.
