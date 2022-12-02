@@ -31,7 +31,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `Live Appllication`
 
-Test the app live on this url https://appreacttest.netlify.app/
+Test the app live on this url https://master--gilded-caramel-215b22.netlify.app/administration/logger-search
 
 ### `Application Features`
 
