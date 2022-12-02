@@ -1,10 +1,11 @@
+/** Initail States For Logger Screen */
 export const initialState = {
-    headers: ["Log ID",
-        "Application Type",
-        "Application ID",
-        "Action",
-        "Action Details",
-        "Date : Time"],
+    headers: [{ name: "Log ID", sortBy: "", keyName: "logId" },
+    { name: "Application Type", sortBy: "", keyName: "applicationType" },
+    { name: "Application ID", sortBy: "", keyName: "applicationId" },
+    { name: "Action", sortBy: "", keyName: "actionType" },
+    { name: "Action Details", sortBy: "", keyName: "" },
+    { name: "Date : Time", sortBy: "", keyName: "creationTimestamp" }],
     tableData: [],
     allData: [],
     number: 0,
@@ -20,5 +21,5 @@ export const initialState = {
     toDate: "",
     applicationId: "",
     actionTypes: [],
-    applicationTypes: []
-}
+    applicationTypes: [],
+};

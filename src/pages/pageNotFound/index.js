@@ -1,5 +1,8 @@
-import React from 'react'
-import LinkComponent from "../../components/Link"
+import React from 'react';
+import LinkComponent from "../../components/Link";
+
+/** Page Not Found Component Run When User Add Wrong URL */
+
 function PageNotFound() {
     return (
         <div className="d-flex justify-content-center flex-column align-items-center">
@@ -14,4 +17,4 @@ function PageNotFound() {
         </div>
     )
 }
-export default PageNotFound
+export default PageNotFound;

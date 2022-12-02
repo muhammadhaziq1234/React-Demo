@@ -1,8 +1,11 @@
-import React from 'react'
-import { Routes, Route, Navigate } from 'react-router-dom'
-import Layout from '../layout/index'
-import PageNotFound from "../pages/pageNotFound"
-import LoggerSearch from '../pages/LoggerSearch'
+import React from 'react';
+import { Routes, Route, Navigate } from 'react-router-dom';
+import Layout from '../layout/index';
+import PageNotFound from "../pages/pageNotFound";
+import LoggerSearch from '../pages/LoggerSearch';
+
+/** Routes For Application  */
+
 function AppRoutes() {
     return (
         <Routes>
@@ -19,4 +22,4 @@ function AppRoutes() {
         </Routes>
     )
 }
-export default AppRoutes
+export default AppRoutes;

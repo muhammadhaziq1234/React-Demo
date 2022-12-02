@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from "prop-types";
 
-function TableRow({ items }) {
+function TableRow({ items = [] }) {
     return (
         items?.map((item, key) => (
             <tr key={key || item.logId} className="text-left" data-testid='row-userTest'>
@@ -12,6 +13,10 @@ function TableRow({ items }) {
                 <td>{item?.creationTimestamp || ""}</td>
             </tr>
         ))
-    )
+    );
 }
-export default React.memo(TableRow)
+export default React.memo(TableRow);
+
+TableRow.propTypes = {
+    items: PropTypes.array,
+};

@@ -2,20 +2,28 @@ import React from 'react';
 import { usePagination, DOTS } from '../../../hooks/usePagination';
 import { useAppState, useAppDispatch } from '../../../context';
 import './pagination.scss';
-const Pagination = props => {
+
+const Pagination = () => {
+
+    /** Get States From Context */
     const {
         recordsFiltered,
         currentPage,
         pageSize,
 
     } = useAppState();
+
+    /** Get Dispatch From Context */
     const dispatch = useAppDispatch()
+
+    /** usePagination Hook With Props */
     const paginationRange = usePagination({
         currentPage,
         recordsTotal: recordsFiltered,
         siblingCount: 1,
         pageSize
     });
+
     if (currentPage === 0 || paginationRange.length < 2) {
         return null;
     }
@@ -29,17 +37,13 @@ const Pagination = props => {
     };
 
     let lastPage = paginationRange[paginationRange.length - 1];
+
     return (
-        <ul
-            className={'pagination-container'}
-        >
-            <li
-                className={`pagination-item ${currentPage === 1 && "disabled"
-                    }`}
-                onClick={onPrevious}
-            >
+        <ul className='pagination-container'>
+            <li className={`pagination-item ${currentPage === 1 && "disabled"}`} onClick={onPrevious} >
                 <div className="arrow left" />
             </li>
+
             {paginationRange.map(pageNumber => {
 
                 if (pageNumber === DOTS) {
@@ -56,11 +60,8 @@ const Pagination = props => {
                     </li>
                 );
             })}
-            <li
-                className={`pagination-item ${currentPage === lastPage && "disabled"
-                    }`}
-                onClick={onNext}
-            >
+
+            <li className={`pagination-item ${currentPage === lastPage && "disabled"}`} onClick={onNext}>
                 <div className="arrow right" />
             </li>
         </ul>

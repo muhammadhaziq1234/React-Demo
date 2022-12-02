@@ -12,6 +12,6 @@ const requestHandlers = [
     }))
 
   })
-]
+];
 
-export { requestHandlers }
+export { requestHandlers };

@@ -1,5 +1,7 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+
 const LinkComponent = ({ external = false, to = "#", children, ...rest }) => {
   if (external) {
     return (
@@ -17,3 +19,9 @@ const LinkComponent = ({ external = false, to = "#", children, ...rest }) => {
 };
 
 export default LinkComponent;
+
+LinkComponent.propTypes = {
+  to: PropTypes.string,
+  children:PropTypes.any,
+  external:PropTypes.bool
+};

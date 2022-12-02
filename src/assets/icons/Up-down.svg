@@ -1,0 +1,17 @@
+ <svg xmlns="http://www.w3.org/2000/svg" width="9.922" height="14.975" viewBox="0 0 9.922 14.975">
+        <g id="Group_7298" data-name="Group 7298" transform="translate(-1439 -437.513)">
+          <path
+            id="ant-design_caret-down-filled"
+            d="M170.207,300H160.95a.3.3,0,0,0-.261.493l4.628,5.367a.353.353,0,0,0,.521,0l4.628-5.367A.3.3,0,0,0,170.207,300Z"
+            transform="translate(1278.382 146.513)"
+            fill="#b2b2b2"
+          />
+          <path
+            id="ant-design_caret-down-filled-2"
+            data-name="ant-design_caret-down-filled"
+            d="M170.207,305.975H160.95a.3.3,0,0,1-.261-.493l4.628-5.367a.353.353,0,0,1,.521,0l4.628,5.367A.3.3,0,0,1,170.207,305.975Z"
+            transform="translate(1278.382 137.513)"
+            fill="#b2b2b2"
+          />
+        </g>
+      </svg>

@@ -1,5 +1,5 @@
-import * as React from 'react'
-import { ErrorBoundary } from 'react-error-boundary'
+import * as React from 'react';
+import { ErrorBoundary } from 'react-error-boundary';
 
 function ErrorFallback({ error, resetErrorBoundary }) {
     return (
@@ -15,4 +15,4 @@ function AppErrorBoundary(props) {
     return <ErrorBoundary FallbackComponent={ErrorFallback} {...props} />
 }
 
-export default AppErrorBoundary
+export default AppErrorBoundary;

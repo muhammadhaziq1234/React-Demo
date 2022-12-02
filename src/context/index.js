@@ -1,6 +1,6 @@
-import React from 'react'
-const AppStateContext = React.createContext()
-const AppDispatchContext = React.createContext()
+import React from 'react';
+const AppStateContext = React.createContext();
+const AppDispatchContext = React.createContext();
 
 /** Use For Get Context States */
 
@@ -10,7 +10,7 @@ function useAppState() {
         throw new Error('useAppState must be used within the AppProvider')
     }
     return context
-}
+};
 /** Use For Get Context Dispatch Function */
 function useAppDispatch() {
     const context = React.useContext(AppDispatchContext)
@@ -18,11 +18,11 @@ function useAppDispatch() {
         throw new Error('useAppDispatch must be used within the AppProvider')
     }
     return context
-}
+};
 
 export {
     AppStateContext,
     AppDispatchContext,
     useAppState,
     useAppDispatch
-}
+};

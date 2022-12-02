@@ -1,14 +1,17 @@
-import React from 'react'
-import { Outlet, useLocation } from 'react-router-dom'
-import { AppStateContext, AppDispatchContext } from "../context"
-import appReducer from '../context/reducer'
-import { initialState } from '../context/initialState'
-import BreadCrumbComponent from '../components/BreadCrumb'
-import Header from '../components/Header/header'
+import React from 'react';
+import { Outlet, useLocation } from 'react-router-dom';
+import { AppStateContext, AppDispatchContext } from "../context";
+import appReducer from '../context/reducer';
+import { initialState } from '../context/initialState';
+import BreadCrumbComponent from '../components/BreadCrumb';
+import Header from '../components/Header/header';
 
+/** Main Page Layout Component */
 function Layout() {
+
     const location = useLocation()
     const [state, dispatch] = React.useReducer(appReducer, initialState)
+
     return (
         <div className="container-fluid">
             <Header />
@@ -33,6 +36,7 @@ function Layout() {
                 </AppDispatchContext.Provider>
             </section>
         </div>
-    )
-}
-export default Layout
+    );
+};
+
+export default Layout;
