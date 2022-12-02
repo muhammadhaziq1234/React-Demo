@@ -31,14 +31,14 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `Live Appllication`
 
-Test the app live on this url https://master--gilded-caramel-215b22.netlify.app/administration/logger-search
+Test the app live on this url https://6389e919e8cbec0008c74b84--gilded-caramel-215b22.netlify.app/administration/logger-search
 
 ### `Application Features`
 
-1-Show Logger Records In Table.
-2-By Default Show 10 Records In Table.
-3-Show Pagination For Get More Records.
-4-User can filter logs by using filtering options provided
-5-User can see sorted results for each columns
-6-Test Case Implement On Input Components.
-7-Test Case Implement On Logger Search Screen Table Records
+1-Show Logger Records In Table.\
+2-By Default Show 10 Records In Table.\
+3-Show Pagination For Get More Records.\
+4-User can filter logs by using filtering options provided.\
+5-User can see sorted results for each columns.\
+6-Test Case Implement On Input Components.\
+7-Test Case Implement On Logger Search Screen Table Records.\
